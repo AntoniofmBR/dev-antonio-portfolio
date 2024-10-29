@@ -81,18 +81,18 @@ export function SomeProjects() {
       initial="hidden"
       animate={isVisible ? "visible" : "hidden"}
       transition={{ duration: .5, delay: 0.25 }}
-      className='h-screen animation flex flex-col pr-7 pl-7 pb-7 justify-between'
+      className='min-h-screen animation flex flex-col p-7 justify-between'
     >
       <h1 className='text-text_base font-bold text-4xl mt-16' >
         <Trans i18nKey='some_projects_title' />
       </h1>
 
-      <div className="flex items-center justify-between h-screen">
+      <div className="flex items-center justify-between">
         <Button onClick={handlePrev} className="mr-5">
           <CaretDoubleLeft size={40} className='hover:text-gray_dark' />
         </Button>
         <div className='flex flex-col w-full items-center gap-12' >
-          <h1 className='text-text_base text-2xl font-light' >
+          <h1 className='text-text_base lg:text-2xl md:text-1xl sm:text-xl font-light' >
             {images[currentIndex].title}
           </h1>
           <motion.img
@@ -103,13 +103,13 @@ export function SomeProjects() {
             exit={{ opacity: 0 }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
-            className="w-3/5 h-90 object-cover"
+            className="w-90 h-90"
           />
         </div>
         <Button onClick={handleNext} className="ml-5">
           <CaretDoubleRight size={40} className='hover:text-gray_dark' />
         </Button>
-    </div>
+      </div>
 
       <div className='flex w-full justify-center' >
         <Button

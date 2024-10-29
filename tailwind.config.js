@@ -23,6 +23,9 @@ module.exports = {
         link_button_github_hover: '#000',
         focus: '#FFFCF2',
       },
+      screens: {
+        sm: '320px',
+      }
     },
   },
   plugins: [],

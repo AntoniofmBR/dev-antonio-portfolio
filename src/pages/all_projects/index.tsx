@@ -86,10 +86,10 @@ export default  function AllProjects() {
   const {  } = useTranslation();
 
   return (
-    <div className='h-screen flex flex-col p-7 mb-11  items-center' >
+    <div className='min-h-screen flex flex-col p-7 mb-11 items-center' >
       <Header />
 
-      <h1 className= 'text-text_base font-bold text-4xl text-center' >
+      <h1 className= 'text-text_base font-bold text-4xl sm:mt-20 text-center' >
         <Trans i18nKey='title_projects' />
       </h1>
       <div className='flex items-center justify-center mt-2'>
@@ -121,7 +121,7 @@ export default  function AllProjects() {
         </motion.p>
       </div>
 
-      <nav className='grid grid-cols-3 gap-10 mt-12 w-9/12 justify-items-center' >
+      <nav className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 mt-12 justify-items-center' >
         { projects.map((project, index) => {
           return (
             <Card

@@ -86,7 +86,7 @@ export function Card({ title, src, description, url_github, url_project }: CardP
         className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
         overlayClassName="fixed inset-0"
       >
-        <div className='h-auto w-[800px] flex flex-col items-center bg-bg_card p-7 rounded-2xl gap-2'>
+        <div className='h-auto lg:w-[800px] md:w-[700px] sm:w-full flex flex-col items-center bg-bg_card p-7 rounded-2xl gap-2'>
         
           <div className='flex-1 flex justify-between w-full'>
               <div />
@@ -106,9 +106,9 @@ export function Card({ title, src, description, url_github, url_project }: CardP
          <div className='flex flex-col items-center justify-center gap-3' >
           <img
               src={src}
-              className='h-96 w-full'
+              className='lg:h-96 md:h-90 sm:h-64 w-full'
             />
-            <p className='text-text_base w-full text-md' >
+            <p className='text-text_base w-full lg:text-md md:text-xl sm:text-sm' >
               {description}
             </p>
           </div>

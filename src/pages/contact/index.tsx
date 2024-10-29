@@ -46,9 +46,9 @@ export function Contact() {
       initial="hidden"
       animate={isVisible ? "visible" : "hidden"}
       transition={{ duration: .5, delay: 0.25 }}
-      className='animation h-screen bg-background_secondary flex flex-col pr-7 pl-7'
+      className='animation min-h-screen bg-background_secondary flex flex-col justify-between pr-7 pl-7'
     >
-      <h1 className='text-text_base font-bold text-4xl mt-14' >
+      <h1 className='text-text_base font-bold text-4xl mt-14 w-full' >
         <Trans i18nKey='contact_title' />
       </h1>
 

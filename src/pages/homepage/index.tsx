@@ -22,24 +22,24 @@ export function Homepage() {
       initial="hidden"
       animate="visible"
       transition={{ duration: 1.5, delay: .75 }}
-      className='animation h-screen flex flex-col gap-32 pr-7 pl-7'
+      className='animation min-h-screen flex flex-col gap-32 pr-7 pl-7'
     >
       <Header />
-      <div className='flex items-center justify-between' >
+      <div className='lg:flex md:flex sm:flex-wrap items-center justify-between' >
         <div className='flex flex-col gap-3' >
-          <h1 className='font-bold text-6xl' >
+          <h1 className='font-bold lg:text-5xl md:text-4xl sm:text-3xl' >
             <Trans i18nKey='title_Iam' />
             <strong className='text-green_base ml-3'>Antonio Fonseca</strong>
             <Trans i18nKey='title_developer' />
           </h1>
-          <p className='font-extralight text-2xl' >
+          <p className='font-extralight lg:text-2xl md:text-xl sm:text-sm' >
             <Trans i18nKey='subtitle' />
           </p>
         </div>
         <motion.img
           src='https://github.com/AntoniofmBR.png'
           alt="Avatar github Antonio"
-          className='h-60 mr-20 rounded-3xl border-2 border-focus'
+          className='lg:h-60 lg:mr-20 md:h-40 md:mr-12 sm:mr-7 sm:h-60 sm:mt-20 sm:mb-20 rounded-3xl border-2 border-focus'
           variants={avatar}
           initial="default"
           whileHover="hover"
