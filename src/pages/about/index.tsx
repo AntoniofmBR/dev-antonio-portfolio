@@ -4,6 +4,7 @@ import { Trans } from 'react-i18next';
 
 import { Skill, SkillProps } from '../../components/skill';
 
+// images
 import Illustration from '../../assets/illustration.png';
 import React from '../../assets/skills/react.png';
 import TypeScript from '../../assets/skills/typescript.png';
@@ -92,51 +93,45 @@ export function About() {
       initial="hidden"
       animate={isVisible ? "visible" : "hidden"}
       transition={{ duration: .5, delay: 0.25 }}
-      className='animation h-screen flex flex-col bg-background_secondary pr-7 pl-7'
+      className='animation min-h-screen flex flex-col bg-background_secondary pr-7 pl-7'
     >
       <h1 className='text-text_base font-bold text-4xl mt-10'>
         <Trans i18nKey='title_about' />
       </h1>
-      <main className='flex justify-between mt-7 w-full'>
-        <section className='w-1/2' >
-          <p className='font-extralight text-xl text-text_base'>
-            <Trans i18nKey='paragraph' />
-            <br />
-            <br />
-            <Trans i18nKey='subtitle_about' />
-          </p>
+      <main className="flex flex-wrap justify-between mt-7 w-full">
+        <section className="w-full lg:w-1/2 mb-6 lg:mb-0">
+          <p className="font-extralight text-xl text-text_base ">
+          <Trans i18nKey="paragraph" />
+          <br />
+          <br />
+          <Trans i18nKey="subtitle_about" />
+        </p>
 
+        <h1 className="text-text_base font-bold text-4xl mt-16">
+          <Trans i18nKey="mySkills_about" />
+        </h1>
 
-          <h1 className='text-text_base font-bold text-4xl mt-16'>
-            <Trans i18nKey='mySkills_about' />
-          </h1>
-          <div className='grid grid-cols-4 gap-6 mt-6 justify-center' >
-            { skills.map((skill, index) => {
-              return (
-                <Skill
-                  key={index}
-                  src={skill.src}
-                  alt={skill.alt}
-                />
-              )
-            }) }
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-6 mb-6 justify-center">
+            {skills.map((skill, index) => (
+              <Skill key={index} src={skill.src} alt={skill.alt} />
+            ))}
           </div>
         </section>
 
-        <section className='flex flex-col items-center w-1/2'>
+        <section className="flex flex-col items-center w-full lg:w-1/2">
           <motion.img
             src={Illustration}
             alt="Illustration"
-            className='h-96'
+            className="lg:h-96 md:h-80 sm:h-72"
             variants={illustration_animation}
             initial="default"
             whileHover="hover"
           />
-          <div className='flex flex-col items-center justify-center' >
-            <p className='font-extralight text-2xl text-text_base'>
-              <Trans i18nKey='phrase_jobs' />
+          <div className="flex flex-col items-center justify-center">
+            <p className="font-extralight lg:text-3xl md:text-2xl sm:text-xl text-text_base">
+              <Trans i18nKey="phrase_jobs" />
             </p>
-            <p className='font-extralight text-2xl text-text_base flex justify-start mt-2 w-full'>
+            <p className="font-extralight lg:text-3xl md:text-2xl sm:text-xl text-text_base flex justify-start mt-2 w-full">
               -Steve Jobs
             </p>
           </div>

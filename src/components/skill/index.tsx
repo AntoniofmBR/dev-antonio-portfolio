@@ -21,7 +21,7 @@ export function Skill({ alt, src }: SkillProps) {
       <img
         src={src}
         alt={alt}
-        className='h-24 w-auto '
+        className='lg:h-24 md:h-20 sm: h-12 w-auto '
       />
     </motion.div>
   )
