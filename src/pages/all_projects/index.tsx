@@ -15,6 +15,7 @@ import TodoList from '../../assets/projects_images/todo_list.png'
 import NLWSetup from '../../assets/projects_images/nlw_setup.png'
 import NLWSpaceTime from '../../assets/projects_images/nlw_spacetime.png'
 import NLWeSports from '../../assets/projects_images/nlw_eSports.png'
+import WorldGames from '../../assets/projects_images/world_games.png'
 
 type Project = {
   title: string
@@ -78,6 +79,13 @@ export const projects: Project[] = [
     url_github: 'https://github.com/AntoniofmBR/NLW-eSports',
     url_project: 'https://antoniofmbr.github.io/NLW-eSports/',
     description: <Trans i18nKey='description_nlw_eSports' />,
+  },
+  {
+    title: 'Mundo dos Games',
+    src: WorldGames,
+    url_github: 'https://github.com/AntoniofmBR/mundo_dos_games',
+    url_project: 'https://mundo-dos-games.vercel.app/',
+    description: <Trans i18nKey='description_world_games' />,
   },
 ];
 
