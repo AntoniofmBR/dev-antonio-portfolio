@@ -16,6 +16,7 @@ import NLWSetup from '../../assets/projects_images/nlw_setup.png'
 import NLWSpaceTime from '../../assets/projects_images/nlw_spacetime.png'
 import NLWeSports from '../../assets/projects_images/nlw_eSports.png'
 import WorldGames from '../../assets/projects_images/world_games.png'
+import CookVerse from '../../assets/projects_images/cookverse.png'
 
 type Project = {
   title: string
@@ -79,6 +80,13 @@ export const projects: Project[] = [
     url_github: 'https://github.com/AntoniofmBR/NLW-eSports',
     url_project: 'https://antoniofmbr.github.io/NLW-eSports/',
     description: <Trans i18nKey='description_nlw_eSports' />,
+  },
+  {
+    title: 'CookVerse',
+    src: CookVerse,
+    url_github: 'https://github.com/AntoniofmBR/mundo_dos_games',
+    url_project: 'https://cook-verse.vercel.app/',
+    description: <Trans i18nKey='description_cookVerse' />,
   },
   {
     title: 'Mundo dos Games',
