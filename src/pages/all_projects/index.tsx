@@ -18,6 +18,7 @@ import NLWeSports from '../../assets/projects_images/nlw_eSports.png'
 import WorldGames from '../../assets/projects_images/world_games.png'
 import CookVerse from '../../assets/projects_images/cookverse.png'
 import VeilOfEchoes from '../../assets/projects_images/veil_of_echoes.png'
+import PetShop from '../../assets/projects_images/pet_shop.png'
 
 type Project = {
   title: string
@@ -103,6 +104,13 @@ export const projects: Project[] = [
     url_project: 'https://veil-of-echoes.vercel.app/',
     description: <Trans i18nKey='description_veil_of_echoes' />,
   },
+  {
+    title: 'Pet Shop',
+    src: PetShop,
+    url_github: 'https://github.com/AntoniofmBR/Pet-shop',
+    url_project: 'https://pet-shop-beta-jade.vercel.app/',
+    description: <Trans i18nKey='description_pet_shop' />,
+  },
 ];
 
 
@@ -116,6 +124,7 @@ export default  function AllProjects() {
       <h1 className= 'text-text_base font-bold text-4xl sm:mt-20 text-center' >
         <Trans i18nKey='title_projects' />
       </h1>
+
       <div className='flex items-center justify-center mt-2'>
         <motion.img
           className='h-10 w-10'
