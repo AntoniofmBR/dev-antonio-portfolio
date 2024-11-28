@@ -19,6 +19,7 @@ import WorldGames from '../../assets/projects_images/world_games.png'
 import CookVerse from '../../assets/projects_images/cookverse.png'
 import VeilOfEchoes from '../../assets/projects_images/veil_of_echoes.png'
 import PetShop from '../../assets/projects_images/pet_shop.png'
+import QuizCraft from '../../assets/projects_images/quizCraft.png'
 
 type Project = {
   title: string
@@ -110,6 +111,13 @@ export const projects: Project[] = [
     url_github: 'https://github.com/AntoniofmBR/Pet-shop',
     url_project: 'https://pet-shop-beta-jade.vercel.app/',
     description: <Trans i18nKey='description_pet_shop' />,
+  },
+  {
+    title: 'QuizCraft',
+    src: QuizCraft,
+    url_github: 'https://github.com/AntoniofmBR/QuizCraft',
+    url_project: 'https://quiz-craft-alpha.vercel.app/',
+    description: <Trans i18nKey='description_quizcraft' />,
   },
 ];
 
